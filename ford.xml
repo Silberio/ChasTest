@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<shiporder orderid="21be4fde-b3c3-413c-9bd3-875ddc4aee2f">
+    <orderperson>Henry Ford Company</orderperson>
+    <shipto>
+        <name>Henry Ford</name>
+        <address>Mack Avenue</address>
+        <city>Detroit</city>
+        <country>USA</country>
+    </shipto>
+	<item>
+        <title>T-Ford model 1</title>
+        <note>First batch of automobiles</note>
+        <quantity>20000</quantity>
+        <price>300</price>
+    </item>
+</shiporder>
