@@ -28,22 +28,13 @@ import objects.generated.Shiporder.Shipto;
  */
 public class OrderCreator {
 
-	private static OrderCreator instance = null;
-
 	/**
-	 * Singleton instantiation of the OrderCreator class
-	 * 
-	 * initialize with <b>OrderCreator.getInstance();</b>
-	 * 
-	 * @return an initialized instance of OrderCreator
+	 * Class Constructor
 	 */
-	public static OrderCreator getInstance() {
-		if (instance == null) {
-			instance = new OrderCreator();
-		}
-		return instance;
+	public OrderCreator() {
+		
 	}
-
+	
 	// VARIABLES FOR ORDER CREATION
 	private ObjectFactory factory = new ObjectFactory();
 	private Shiporder order = factory.createShiporder();

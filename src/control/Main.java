@@ -1,6 +1,5 @@
 package control;
 
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
@@ -10,7 +9,7 @@ public class Main {
 	public static void main(String[] args) throws FileNotFoundException {
 		
 		// Marshalls order. Includes a method to create a mock order with hardcoded values
-		OrderCreator oc = OrderCreator.getInstance();
+		OrderCreator oc = new OrderCreator();
 		
 
 		// xml file where our sample marshalled xml will be written to
