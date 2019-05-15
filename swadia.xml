@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<shiporder orderid="24dad7e8-4b7a-48e2-922a-fc358d3a9348">
+    <orderperson>Kingdom of Swadia</orderperson>
+    <shipto>
+        <name>King Harlaus of Swadia</name>
+        <address>Praven north st.</address>
+        <city>Praven</city>
+        <country>Swadia</country>
+    </shipto>
+    <item>
+        <title>Shiny sword</title>
+        <note></note>
+        <quantity>1</quantity>
+        <price>16000</price>
+    </item>
+</shiporder>

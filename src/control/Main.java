@@ -9,20 +9,24 @@ public class Main {
 
 	public static void main(String[] args) throws FileNotFoundException {
 		
-		// xml file where our sample marshalled xml will be written to
-		OutputStream os = new FileOutputStream("kaiser.xml");
-		
 		// Marshalls order. Includes a method to create a mock order with hardcoded values
 		OrderCreator oc = OrderCreator.getInstance();
 		
 
-		// mock order will be created, marshalled and printed to console
-		oc.marshallOrder(oc.createOrderByUserInput(), os);
+		// xml file where our sample marshalled xml will be written to
+		OutputStream os = new FileOutputStream("order.xml");
 		
+		oc.runOrderCreator(os);
+
 		// order created from XML will be unmarshalled
 		// then print a representation (OrderPerson, item qt. and name)
 		// Here, a sample xml is provided
-		oc.unmarshallXML(new File("ford.xml"));
+		/*
+		 * IDEA FOR UNMARSHALL: 
+		 * 	T - user input to unmarshall 
+		 * If user wants to unmarshall xml, then it will prompt for the file URL and set an internal file
+		 */
+		// oc.unmarshallXML(new File("ford.xml"));
 
 	}
 
