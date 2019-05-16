@@ -9,4 +9,12 @@ This was created using JAXB
 
 ### How to run
 
-The program is compiled into a runnable jar using Maven and can be run using the java -jar command
+The program is compiled into a runnable jar using Maven and can be run using the java -jar command.
+
+### Details
+
+The classes *Shipmentorder* and *ObjectFactory* were created using xjc, from a given xsd. Business logic resides within *OrderCreator* class, where marshalling and unmarshalling takes place
+
+#### Marshalling an xml
+ 
+This can be done two ways, either through sample method done by hardcoded data where 
