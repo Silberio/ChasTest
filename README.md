@@ -17,4 +17,8 @@ The classes *Shipmentorder* and *ObjectFactory* were created using xjc, from a g
 
 #### Marshalling an xml
  
-This can be done two ways, either through sample method done by hardcoded data where 
+This can be done two ways, either through sample method done by hardcoded data residing in the *createOrderWithSampleData()* function and by user input through the *createOrderByUserInput()* method, which will prompt the user for input on every line. There are currently no exception handlers or validators for the input. 
+
+#### Unmarshalling an xml
+
+Unmarshalling (porting data from XML to a POJO) is done primarily with the *selectUnmarshall()* method, which will prompt the user for the file location. Location must be given with an absolute filepath. File path will then be stored locally and then given to a *new File()* object , which in turn will be passed on to *unmarshallXML* for unmarshalling. A few lines from the data will be printed on the console.
