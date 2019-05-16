@@ -22,3 +22,7 @@ This can be done two ways, either through sample method done by hardcoded data r
 #### Unmarshalling an xml
 
 Unmarshalling (porting data from XML to a POJO) is done primarily with the *selectUnmarshall()* method, which will prompt the user for the file location. Location must be given with an absolute filepath. File path will then be stored locally and then given to a *new File()* object , which in turn will be passed on to *unmarshallXML* for unmarshalling. A few lines from the data will be printed on the console.
+
+#### points that could be improved
+
+Currently, all the logic is held in the *OrderCreator* class, including UI methods. This technically doesn't not follow the SOLID principles, where OrderCreator should **only** have to deal with creating the xml methods. However, every function is decoupled. One could, theoretically, only use the marshaller/unmarshall methods by themselves in any other UI.
