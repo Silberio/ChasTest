@@ -83,7 +83,7 @@ public class OrderCreator {
 	 */
 	private void orderCreationSelection() {
 		System.out.println(
-				"Create an order (Marshall XML) \n" + "For sample data, enter S\n" + "For User created, enter U");
+				"Create an order (Marshall XML) \n" + "For sample data, enter S\n" + "For User created, enter U\n" + "For unmarshalling an XML, press T");
 		switch (sc.nextLine().toUpperCase()) {
 		case "S":
 			marshallOrder(createOrderWithSampleData());
@@ -227,7 +227,7 @@ public class OrderCreator {
 	public void selectUnmarshall() {
 		File file;
 
-		System.out.println("Input file path");
+		System.out.println("Input absolute file path");
 		String input = sc.nextLine();
 		try {
 			file = new File(input);
